@@ -1,0 +1,55 @@
+.piano {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  background: #222;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  height: 200px;
+}
+
+.key {
+  position: relative;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.key:active {
+    background-color: #eee;
+}
+
+.white {
+  width: 40px;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  color: #888;
+  font-size: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+.white.active {
+    background: #ffd700;
+}
+
+.black {
+  width: 24px;
+  height: 60%;
+  background: black;
+  margin-left: -12px;
+  margin-right: -12px;
+  z-index: 2;
+  color: white;
+  font-size: 8px;
+  border-radius: 0 0 3px 3px;
+}
+
+.black.active {
+    background: #ff4500;
+}
